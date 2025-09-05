@@ -1,4 +1,4 @@
-class Solution {
+class MajorityElement {
     public int majorityElement(int[] nums) {
         int candidate = 0;
         int count = 0;
@@ -11,5 +11,11 @@ class Solution {
         }
 
         return candidate;
+    }
+
+    public static void main(String[] args) {
+        MajorityElement me = new MajorityElement();
+        int[] nums = { 3, 2, 3 };
+        System.out.println(me.majorityElement(nums));
     }
 }

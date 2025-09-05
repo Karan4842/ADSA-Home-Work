@@ -1,4 +1,4 @@
-class Solution {
+class TrappingRainWater {
     public int trap(int[] height) {
         int left = 0, right = height.length - 1;
         int leftMax = 0, rightMax = 0, water = 0;
@@ -21,5 +21,12 @@ class Solution {
             }
         }
         return water;
+    }
+
+    public static void main(String[] args) {
+        TrappingRainWater solution = new TrappingRainWater();
+        int[] height = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+        int result = solution.trap(height);
+        System.out.println("Trapped rain water: " + result); // Output: 6
     }
 }
