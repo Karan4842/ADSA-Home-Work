@@ -20,4 +20,15 @@ class findKthPositive {
         // Answer is left + k
         return left + k;
     }
+
+    // Main method to test
+    public static void main(String[] args) {
+        findKthPositive solver = new findKthPositive();
+
+        int[] arr = { 2, 3, 4, 7, 11 };
+        int k = 5;
+
+        int result = solver.findKthPositive(arr, k);
+        System.out.println("The " + k + "th missing number is: " + result);
+    }
 }
